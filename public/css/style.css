@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap');
+
+:root {
+    --green: #095d4c;
+    --black: #444444;
+    --grey: #777777;
+    --white: #ffffff;
+    --box-shadow: 0.5rem 0.5rem 0 rgba(22, 160, 133, 0.2);
+    --text-shadow: 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.2);
+    --border: 0.2rem solid var(--green);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    transition: all 0.2s ease-out;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+section:nth-child(odd) {
+    background: #F5F5F5;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    border: var(--border);
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    color: var(--green);
+    cursor: pointer;
+    font-size: 1.7rem;
+    background: var(--white);
+}
+
+.btn span {
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    background: var(--green);
+    color: var(--white);
+    margin-left: 0.5rem;
+}
+
+.btn:hover {
+    background: var(--green);
+    color: var(--white);
+}
+
+.btn:hover span {
+    background: var(--white);
+    color: var(--green);
+    margin-left: 1rem;
+}
+
+.heading {
+    text-align: center;
+    padding-bottom: 2rem;
+    text-shadow: var(--text-shadow);
+    text-transform: uppercase;
+    color: var(--black);
+    font-size: 5rem;
+    letter-spacing: 0.4rem;
+}
+
+.heading span {
+    text-transform: uppercase;
+    color: var(--green)
+}
+
+/* --------------------- Header --------------------- */
+.header {
+    padding: 2rem 9%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--white);
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.header .logo i {
+    color: var(--green);
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    color: var(--grey);
+    margin-left: 2rem;
+}
+
+.header .navbar a:hover {
+    color: var(--green);
+}
+
+#menu-btn {
+    font-size: 2.5rem;
+    border-radius: 0.5rem;
+    background: #EEEEEE;
+    color: var(--green);
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* --------------------- Profile --------------------- */
+.profile {
+    padding-top: 10rem;
+}
+
+.profile h2 {
+    font-size: 3rem;
+    color: var(--black);
+    text-align: left;
+    padding-bottom: 2rem;
+}
+
+.profile h3 {
+    font-size: 2rem;
+    color: var(--black);
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+.profile p {
+    font-size: 1.7rem;
+    text-align: left;
+    padding-bottom: 2rem;
+}
+
+.profile ul {
+    list-style: none;
+    padding-bottom: 2rem;
+    margin: 0rem 0rem 0rem 2rem;
+}
+
+.profile i {
+    color: var(--green);
+    font-size: 1.7rem;
+    padding-right: 1rem;
+}
+
+.profile span {
+    font-size: 1.7rem;
+    color: var(--green);
+    text-align: left;
+    padding-bottom: 2rem;
+}
+
+/* --------------------- Resume / CV --------------------- */
+.resume-cv {
+    padding-top: 10rem;
+}
+
+.resume-cv h2 {
+    font-size: 3rem;
+    color: var(--black);
+    text-align: left;
+    padding-bottom: 2rem;
+}
+
+/* --------------------- Skills --------------------- */
+.skills {
+    padding-top: 10rem;
+}
+
+.skills h2 {
+    font-size: 3rem;
+    color: var(--black);
+    text-align: left;
+    padding-bottom: 2rem;
+}
+
+.skills h3 {
+    font-size: 2rem;
+    color: var(--black);
+    text-align: left;
+    padding-top: 1rem;
+}
+
+.skills ul {
+    list-style: circle;
+    padding-bottom: 2rem;
+    margin: 0rem 0rem 0rem 2rem;
+}
+
+.skills li {
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+
+/* --------------------- Artifacts --------------------- */
+.artifacts {
+    padding-top: 10rem;
+}
+
+.artifacts h2 {
+    font-size: 3rem;
+    color: var(--black);
+    text-align: left;
+}
+
+.artifacts .artifact h3 {
+    font-size: 2rem;
+    color: var(--black);
+    text-align: left;
+    margin: 2rem 1rem 0rem 1rem;
+}
+
+.artifacts .artifact p {
+    font-size: 1.5rem;
+    color: var(--black);
+    text-align: left;
+    margin: 0rem 1rem;
+}
+
+.artifacts .artifact a {
+    font-size: 1.5rem;
+    color: var(--green);
+    text-align: left;
+    margin: 0rem 1rem;
+}
+
+
+/* --------------------- Footer --------------------- */
+.footer {
+    background: var(--green);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* --------------------- Media Queries --------------------- */
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+    .header {
+        padding: 2rem;
+    }
+    section {
+        padding: 1rem;
+    }
+}
+
+@media (max-width:768px) {
+    #menu-btn {
+        display: initial;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 115%;
+        right: 2rem;
+        border-radius: 0.5rem;
+        box-shadow: var(--box-shadow);
+        width: 30rem;
+        border: var(--border);
+        background: var(--white);
+        transform: scale(0);
+        opacity: 0;
+        transform-origin: top right;
+        transition: none;
+    }
+
+    .header .navbar.active {
+        transform: scale(1);
+        opacity: 1;
+        transition: 0.2s ease-out;
+    }
+
+    .header .navbar a {
+        font-size: 2rem;
+        display: block;
+        margin: 2.5rem;
+    }
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+}
